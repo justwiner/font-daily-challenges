@@ -1,4 +1,4 @@
-# parcel-react
+# font-daily-challenges
 React project based on parcel packaging tools
 # start
 yarn start
