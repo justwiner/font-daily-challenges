@@ -1,0 +1,50 @@
+body {
+  font-family:Microsoft JhengHei, SimHei;
+  background: url('../assets/img/bg.jpg') 0px 0px repeat rgb(229, 230, 208);
+  color: rgb(46, 48, 48);
+  font-size: 12px;
+  min-width: 1110px;
+  padding: 0 6%;
+}
+
+.container {
+  padding: 50px 0;
+  header {
+    text-align: center;
+    font {
+      font-size: 2vw;
+    }
+    .title {
+      font-size: 3vw;
+    }
+  }
+}
+
+.content {
+  margin-top: 100px;
+  background: rgba(245, 245, 245, 0.5);
+  padding: 30px;
+  border-radius: 30px;
+  width: 40%;
+  box-shadow: 10px 5px 10px lightgrey;
+  p {
+    margin: 50px 0;
+    cursor: pointer;
+    font-size: 1vw;
+    transition: color 300ms;
+    font {
+      margin: 0 10px;
+    }
+  }
+  p:hover {
+    color: red;
+  }
+  p font:nth-child(3) {
+    font-size: 0.5vw;
+  }
+  p font:nth-child(1) {
+    vertical-align: middle;
+    display: inline-block;
+    width: 65%;
+  }
+}
