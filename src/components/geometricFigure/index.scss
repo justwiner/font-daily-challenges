@@ -1,0 +1,129 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  height: 200px;
+  text-align: center;
+}
+.wrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*方形没啥好讲的*/
+
+.square {
+  width: 200px;
+  height: 200px;
+  background: #fed3ca;
+  box-sizing: border-box;
+}
+/*长方形也没啥好讲的*/
+
+.retangle {
+  width: 200px;
+  height: 100px;
+  background: #2eb7ed;
+}
+/*圆形就用了css3的border-radius*/
+
+.circle {
+  height: 200px;
+  width: 200px;
+  background: #11309B;
+  border-radius: 100%;
+  /*或者是宽高的一半,因为此处的值是半径*/
+}
+/*半圆这个很简单*/
+
+.semicircle {
+  height: 100px;
+  width: 200px;
+  background: #D65E2A;
+  border-radius: 100px 100px 0 0;
+}
+/*
+椭圆形也是用了border-radius,但是细化到XY轴的半径;
+最简单的椭圆就是X轴的半径为Y轴的一半,反之亦然
+*/
+
+.oval {
+  width: 200px;
+  height: 100px;
+  background: #1C951A;
+  border-radius: 100px/50px;
+  /*X:100px , Y:50px;*/
+}
+/*
+三角形也挺简单的,利用的是边框实现的
+- 宽高为0,因为只需要用到border
+- transparent是用来透明化的,border-color是顺时针方向,你想产生什么方向的三角形都可以控制
+*/
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-width: 100px;
+  border-style: solid;
+  border-color: #8D0EEE transparent transparent transparent;
+  margin-top: 100px;
+}
+/*梯形的原理其实和三角形大同小异,方向同样可控制
+*/
+
+.trapezoid {
+  width: 200px;
+  height: 0;
+  border-width: 100px;
+  border-style: solid;
+  border-color: transparent transparent #6ACFEE transparent;
+}
+/*菱形主要用了CSS3的transform的旋转参数,支持正反方向旋转*/
+
+.diamond {
+  width: 150px;
+  height: 150px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #0CCEf2;
+}
+/*月牙这个图形也不难,也只是微调圆的半径和阴影组合而成*/
+
+.moon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 #0F93AA;
+}
+/*叶子这个说白了还是半径的处理*/
+
+.leaf {
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 255, 0, .5);
+  box-shadow: 2px 1px 1px rgba(0, 0, 0, .1);
+  border-radius: 3px 200px;
+  /*两个是参数是代表对角线, X 这个字母的样子*/
+}
+
+/*书签这个是三角的写法的小小转换*/
+.bookmark {
+  width: 0;
+  height: 160px;
+  border-left: 50px solid #A26D14;
+  border-right: 50px solid #A26D14;
+  border-bottom: 40px solid transparent;
+}
+
+
+/*平行四边形*/
+.parallelogram{
+  height:100px;
+  width:200px;
+  background:#13AD6D;
+  -webkit-transform:skew(-20deg);
+  transform:skew(-20deg);
+}

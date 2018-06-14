@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
+import {BrowserRouter} from 'react-router-dom'
 import Header from '../pages/header/Header'
 import List from '../pages/list/List'
-import Show from '../pages/show/Show'
 import './App.scss'
 
 class App extends Component {
   render () {
-    return (  
-      <div className="container">
-        <Header />
-        <List />
-        <Show />
-      </div>
+    return (
+      <BrowserRouter>
+        <div className="container">
+          <Header />
+          <List />
+        </div>
+      </BrowserRouter>
     )
   }
 }
