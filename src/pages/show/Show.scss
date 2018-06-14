@@ -1,0 +1,31 @@
+.show-content {
+  box-shadow: 10px 5px 10px lightgrey;
+  width: 45vw;
+  height: 50vh;
+  padding: 10px;
+  background-color: white;
+  position: fixed;
+  display: inline-block;
+  z-index: 3;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  header {
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    i {
+      cursor: pointer;
+      transition: color 300ms,transform 300ms;
+    }
+    i:hover {
+      color: #61c1bf;
+    }
+  }
+  header div i:nth-child(2):hover {
+    transform:rotate(90deg);
+  }
+  header div i:nth-child(2), header i:nth-child(1) {
+    margin-left: 30px;
+  }
+}
