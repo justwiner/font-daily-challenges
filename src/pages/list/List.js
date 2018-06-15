@@ -4,7 +4,8 @@ import {BadModel} from '../../components'
 import {
   LiteralSlipping,
   RectangularRotation,
-  ConcentricCircleLoading
+  ConcentricCircleLoading,
+  NON404
 } from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
@@ -41,6 +42,10 @@ class List extends Component {
       {
         title: '同心圆Loading',
         link: '/dayThree'
+      },
+      {
+        title: '404动画',
+        link: '/dayFour'
       }
     ]
     return (
@@ -62,6 +67,7 @@ class List extends Component {
                   <Route path="/dayOne" component={() => <LiteralSlipping text="text"/>}></Route>
                   <Route path="/dayTwo" component={() => <RectangularRotation />}></Route>
                   <Route path="/dayThree" component={() => <ConcentricCircleLoading />}></Route>
+                  <Route path="/dayFour" component={() => <NON404 />}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>

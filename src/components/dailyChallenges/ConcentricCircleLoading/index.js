@@ -4,7 +4,7 @@ import './index.scss'
 class ConcentricCircleLoading extends Component {
   render () {
     return (
-      <div class="_circle"></div>
+      <div className="_circle"></div>
     )
   }
 }
