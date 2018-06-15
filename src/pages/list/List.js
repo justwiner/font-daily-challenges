@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import {GeometricFigure} from '../../components'
 import {BadModel} from '../../components'
-import { Switch, Route, Link, BrowserRouter } from 'react-router-dom'
+import {LiteralSlipping} from '../../components/dailyChallenges'
+import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
 
 let _graphStyle = {
@@ -94,7 +95,7 @@ class List extends Component {
           <BadModel open={_open}>
             <BrowserRouter>
                 <div>
-                  <Route path="/dayOne" component={() => <div>dayOne</div>}></Route>
+                  <Route path="/dayOne" component={LiteralSlipping}></Route>
                   <Route path="/dayTwo" component={() => <div>dayTwo</div>}></Route>
                 </div>
             </BrowserRouter>
