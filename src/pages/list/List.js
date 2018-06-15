@@ -28,55 +28,68 @@ class List extends Component {
     const arr = [
       {
         title: '按钮文字滑动特效',
-        link: '/dayOne'
+        link: '/dayOne',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/dayTwo'
+        link: '/dayTwo',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo3'
+        link: '/demo3',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo4'
+        link: '/demo4',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/demo2',
+        github: 'https://www.baidu.com'
       }
     ]
     return (
@@ -94,8 +107,8 @@ class List extends Component {
           }
           <BadModel open={_open}>
             <BrowserRouter>
-                <div>
-                  <Route path="/dayOne" component={LiteralSlipping}></Route>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin:'10vh 0'}}>
+                  <Route path="/dayOne" component={() => <LiteralSlipping text="text"/>}></Route>
                   <Route path="/dayTwo" component={() => <div>dayTwo</div>}></Route>
                 </div>
             </BrowserRouter>

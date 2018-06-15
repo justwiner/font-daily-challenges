@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { PropTypes } from 'prop-types'
+import PropTypes from 'prop-types'
 import {render, unmountComponentAtNode} from 'react-dom'
 import './index.scss'
 
