@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import {GeometricFigure} from '../../components'
 import {BadModel} from '../../components'
-import {LiteralSlipping} from '../../components/dailyChallenges'
+import {
+  LiteralSlipping,
+  RectangularRotation
+} from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
 
@@ -28,68 +31,11 @@ class List extends Component {
     const arr = [
       {
         title: '按钮文字滑动特效',
-        link: '/dayOne',
-        github: 'https://www.baidu.com'
+        link: '/dayOne'
       },
       {
-        title: '跳动的',
-        link: '/dayTwo',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo3',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo4',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
-      },
-      {
-        title: '跳动的',
-        link: '/demo2',
-        github: 'https://www.baidu.com'
+        title: '旋转的矩形',
+        link: '/dayTwo'
       }
     ]
     return (
@@ -109,7 +55,7 @@ class List extends Component {
             <BrowserRouter>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin:'10vh 0'}}>
                   <Route path="/dayOne" component={() => <LiteralSlipping text="text"/>}></Route>
-                  <Route path="/dayTwo" component={() => <div>dayTwo</div>}></Route>
+                  <Route path="/dayTwo" component={() => <RectangularRotation />}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>
