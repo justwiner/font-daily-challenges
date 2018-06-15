@@ -8,7 +8,8 @@ import {
   NON404,
   TheSea,
   MeteorLoading,
-  RainbowLoading
+  RainbowLoading,
+  SloshingAd
 } from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
@@ -61,6 +62,10 @@ class List extends Component {
       {
         title: '彩虹loading',
         link: '/daySeven'
+      },
+      {
+        title: '晃动的广告板',
+        link: '/dayEight'
       }
     ]
     return (
@@ -86,6 +91,7 @@ class List extends Component {
                   <Route path="/dayFive" component={() => <TheSea title="我们一起看海吧"/>}></Route>
                   <Route path="/daySix" component={() => <MeteorLoading />}></Route>
                   <Route path="/daySeven" component={() => <RainbowLoading />}></Route>
+                  <Route path="/dayEight" component={() => <SloshingAd title="Hello" />}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>

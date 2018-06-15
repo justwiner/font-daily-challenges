@@ -5,6 +5,7 @@ import NON404 from './404-NON'
 import TheSea from './TheSea'
 import MeteorLoading from './MeteorLoading'
 import RainbowLoading from './RainbowLoading'
+import SloshingAd from './SloshingAd'
 
 export {
   LiteralSlipping,
@@ -13,5 +14,6 @@ export {
   NON404,
   TheSea,
   MeteorLoading,
-  RainbowLoading
+  RainbowLoading,
+  SloshingAd
 }
