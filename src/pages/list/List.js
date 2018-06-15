@@ -3,10 +3,11 @@ import {GeometricFigure} from '../../components'
 import {BadModel} from '../../components'
 import {
   LiteralSlipping,
-  RectangularRotation,
+  RectangularRotationLoading,
   ConcentricCircleLoading,
   NON404,
-  TheSea
+  TheSea,
+  MeteorLoading
 } from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
@@ -37,7 +38,7 @@ class List extends Component {
         link: '/dayOne'
       },
       {
-        title: '旋转的矩形',
+        title: '旋转矩形Loading',
         link: '/dayTwo'
       },
       {
@@ -51,6 +52,10 @@ class List extends Component {
       {
         title: '海浪',
         link: '/dayFive'
+      },
+      {
+        title: '彗星loading',
+        link: '/daySix'
       }
     ]
     return (
@@ -70,10 +75,11 @@ class List extends Component {
             <BrowserRouter>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin:'10vh 0'}}>
                   <Route path="/dayOne" component={() => <LiteralSlipping text="text"/>}></Route>
-                  <Route path="/dayTwo" component={() => <RectangularRotation />}></Route>
+                  <Route path="/dayTwo" component={() => <RectangularRotationLoading />}></Route>
                   <Route path="/dayThree" component={() => <ConcentricCircleLoading />}></Route>
                   <Route path="/dayFour" component={() => <NON404 />}></Route>
                   <Route path="/dayFive" component={() => <TheSea title="我们一起看海吧"/>}></Route>
+                  <Route path="/daySix" component={() => <MeteorLoading />}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>

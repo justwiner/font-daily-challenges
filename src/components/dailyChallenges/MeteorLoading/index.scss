@@ -1,0 +1,89 @@
+$meteor_color_line_1: gold;
+$meteor_color_line_2: lime;
+$meteor_circle_line_1: -45deg;
+$meteor_circle_line_2: 135deg;
+.meteor-loader {
+  background: black;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 3px 30px black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  .meteor-face:nth-child(1) {
+    width: 70%;
+    height: 70%;
+    border-top-color: $meteor_color_line_1;
+    border-left-color: $meteor_color_line_1;
+
+    animation: roateAnimation 3s infinite linear;
+
+    .meteor-circle {
+      transform: rotate($meteor_circle_line_1);
+    }
+    .meteor-circle::before {
+      background-color: $meteor_color_line_1;
+      box-shadow: 0 0 20px $meteor_color_line_1,
+                0 0 40px $meteor_color_line_1,
+                0 0 60px $meteor_color_line_1,
+                0 0 80px $meteor_color_line_1,
+                0 0 100px $meteor_color_line_1,
+                0 0 0 5px rgba(255,255,0,0.1);
+    }
+  }
+  .meteor-face:nth-child(2) {
+    width: 50%;
+    height: 50%;
+    border-top-color: $meteor_color_line_2;
+    border-left-color: $meteor_color_line_2;
+
+    animation: roateAnimation 2s infinite linear reverse;
+
+    .meteor-circle {
+      transform: rotate($meteor_circle_line_2);
+    }
+    .meteor-circle::before {
+      background-color: $meteor_color_line_2;
+      box-shadow: 0 0 20px $meteor_color_line_2,
+                0 0 40px $meteor_color_line_2,
+                0 0 60px $meteor_color_line_2,
+                0 0 80px $meteor_color_line_2,
+                0 0 100px $meteor_color_line_2,
+                0 0 0 5px rgba(255,255,0,0.1);
+    }
+  }
+  .meteor-face {
+    border-radius: 50%;
+    border: 2px solid transparent;
+    position: absolute;
+    .meteor-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 50%;
+      height: 1px;
+      background-color: transparent;
+      transform-origin: left;
+    }
+    .meteor-circle::before {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      content: '';
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes roateAnimation {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}

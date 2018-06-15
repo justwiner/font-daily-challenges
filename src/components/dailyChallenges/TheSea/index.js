@@ -8,11 +8,11 @@ class TheSea extends Component {
   render () {
     const { title } = this.props
     return (
-      <div class="sea">
-        <p class="title">{title}</p>
-        <span class="wave"></span>
-        <span class="wave"></span>
-        <span class="wave"></span>
+      <div className="sea">
+        <p className="title">{title}</p>
+        <span className="wave"></span>
+        <span className="wave"></span>
+        <span className="wave"></span>
       </div>
     )
   }

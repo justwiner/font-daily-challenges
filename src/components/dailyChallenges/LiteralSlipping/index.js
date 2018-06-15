@@ -11,7 +11,6 @@ class LiteralSlipping extends Component {
   }
   render () {
     const { text } = this.props
-    console.log(text.split(''))
     return (
       <div className="box">
         {
