@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {GeometricFigure} from '../../components'
 import {BadModel} from '../../components'
+import { Switch, Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
 
 let _graphStyle = {
@@ -25,12 +26,12 @@ class List extends Component {
     const { _open } = this.state
     const arr = [
       {
-        title: '跳动的',
-        link: '/demo1'
+        title: '按钮文字滑动特效',
+        link: '/dayOne'
       },
       {
         title: '跳动的',
-        link: '/demo2'
+        link: '/dayTwo'
       },
       {
         title: '跳动的',
@@ -78,26 +79,25 @@ class List extends Component {
       }
     ]
     return (
-      <section className="list-content">
+        <section className="list-content">
           {
             arr.map((item, index) => {
               return (
-                <div onClick={this.openModal.bind(this)} key={index}>
+                <Link to={item.link} onClick={this.openModal.bind(this)} key={index}>
                   <GeometricFigure graphStyle={_graphStyle}>
                     <font>{item.title}</font>
                   </GeometricFigure>
-                </div>
+                </Link>
               )
             })
           }
           <BadModel open={_open}>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
-            <p>123</p>
+            <BrowserRouter>
+                <div>
+                  <Route path="/dayOne" component={() => <div>dayOne</div>}></Route>
+                  <Route path="/dayTwo" component={() => <div>dayTwo</div>}></Route>
+                </div>
+            </BrowserRouter>
           </BadModel>
         </section>
     )

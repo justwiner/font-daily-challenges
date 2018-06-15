@@ -5,14 +5,14 @@
   flex-wrap: wrap;
   margin-top: 10vh;
 }
-.list-content > div > div {
+.list-content > a > div {
   margin: 10vh;
   cursor: pointer;
 }
-.list-content > div > div > div:hover{
+.list-content > a > div > div:hover{
   box-shadow: 10px 10px 10px lightgrey;
   transform: rotate(360deg)
 }
-.list-content > div > div > div {
+.list-content > a > div > div {
   transition: box-shadow 300ms,transform 1s
 }
