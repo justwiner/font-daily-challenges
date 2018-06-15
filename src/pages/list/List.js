@@ -3,7 +3,8 @@ import {GeometricFigure} from '../../components'
 import {BadModel} from '../../components'
 import {
   LiteralSlipping,
-  RectangularRotation
+  RectangularRotation,
+  ConcentricCircleLoading
 } from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
@@ -36,6 +37,10 @@ class List extends Component {
       {
         title: '旋转的矩形',
         link: '/dayTwo'
+      },
+      {
+        title: '同心圆Loading',
+        link: '/dayThree'
       }
     ]
     return (
@@ -56,6 +61,7 @@ class List extends Component {
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', margin:'10vh 0'}}>
                   <Route path="/dayOne" component={() => <LiteralSlipping text="text"/>}></Route>
                   <Route path="/dayTwo" component={() => <RectangularRotation />}></Route>
+                  <Route path="/dayThree" component={() => <ConcentricCircleLoading />}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>
