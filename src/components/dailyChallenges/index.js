@@ -4,6 +4,7 @@ import ConcentricCircleLoading from './ConcentricCircleLoading'
 import NON404 from './404-NON'
 import TheSea from './TheSea'
 import MeteorLoading from './MeteorLoading'
+import RainbowLoading from './RainbowLoading'
 
 export {
   LiteralSlipping,
@@ -11,5 +12,6 @@ export {
   ConcentricCircleLoading,
   NON404,
   TheSea,
-  MeteorLoading
+  MeteorLoading,
+  RainbowLoading
 }
