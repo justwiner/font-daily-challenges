@@ -1,17 +1,18 @@
 .list-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 10vh;
 }
-.list-content > div {
+.list-content > div > div {
   margin: 10vh;
   cursor: pointer;
 }
-.list-content > div > div:hover{
+.list-content > div > div > div:hover{
   box-shadow: 10px 10px 10px lightgrey;
   transform: rotate(360deg)
 }
-.list-content > div > div {
+.list-content > div > div > div {
   transition: box-shadow 300ms,transform 1s
 }
