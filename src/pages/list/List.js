@@ -5,7 +5,8 @@ import {
   LiteralSlipping,
   RectangularRotation,
   ConcentricCircleLoading,
-  NON404
+  NON404,
+  TheSea
 } from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
@@ -46,6 +47,10 @@ class List extends Component {
       {
         title: '404动画',
         link: '/dayFour'
+      },
+      {
+        title: '海浪',
+        link: '/dayFive'
       }
     ]
     return (
@@ -68,6 +73,7 @@ class List extends Component {
                   <Route path="/dayTwo" component={() => <RectangularRotation />}></Route>
                   <Route path="/dayThree" component={() => <ConcentricCircleLoading />}></Route>
                   <Route path="/dayFour" component={() => <NON404 />}></Route>
+                  <Route path="/dayFive" component={() => <TheSea title="我们一起看海吧"/>}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>
