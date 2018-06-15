@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import {render, unmountComponentAtNode} from 'react-dom'
+import closeIcon from '../../assets/img/close.png'
 import './index.scss'
 
 
@@ -34,7 +35,10 @@ class BadModel extends Component {
         }
       }
       render(
-        <div className="modal-content">{ props.children }</div>,
+        <div className="modal-content">
+          <header><img onClick={this.closeModal.bind(this)} src={closeIcon} alt="关闭模态框" /></header>
+          { props.children }
+        </div>,
         this.modalTarget
       );
     }

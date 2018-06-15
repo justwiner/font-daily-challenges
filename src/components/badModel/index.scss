@@ -17,6 +17,15 @@
     animation: modalContentShow 300ms linear;
     animation-fill-mode: forwards;
   }
+  .modal-content > header {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      cursor: pointer;
+      width: 2vw;
+      height: 2vw;
+    }
+  }
 }
 @keyframes modalShow {
   0% {
