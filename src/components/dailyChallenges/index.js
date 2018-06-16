@@ -6,6 +6,7 @@ import TheSea from './TheSea'
 import MeteorLoading from './MeteorLoading'
 import RainbowLoading from './RainbowLoading'
 import SloshingAd from './SloshingAd'
+import MilkFonts from './MilkFonts'
 
 export {
   LiteralSlipping,
@@ -15,5 +16,6 @@ export {
   TheSea,
   MeteorLoading,
   RainbowLoading,
-  SloshingAd
+  SloshingAd,
+  MilkFonts
 }

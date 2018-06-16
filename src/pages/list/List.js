@@ -9,7 +9,8 @@ import {
   TheSea,
   MeteorLoading,
   RainbowLoading,
-  SloshingAd
+  SloshingAd,
+  MilkFonts
 } from '../../components/dailyChallenges'
 import { Route, Link, BrowserRouter } from 'react-router-dom'
 import './List.scss'
@@ -66,6 +67,10 @@ class List extends Component {
       {
         title: '晃动的广告板',
         link: '/dayEight'
+      },
+      {
+        title: '牛奶文字',
+        link: '/dayNine'
       }
     ]
     return (
@@ -92,6 +97,7 @@ class List extends Component {
                   <Route path="/daySix" component={() => <MeteorLoading />}></Route>
                   <Route path="/daySeven" component={() => <RainbowLoading />}></Route>
                   <Route path="/dayEight" component={() => <SloshingAd title="Hello" />}></Route>
+                  <Route path="/dayNine" component={() => <MilkFonts title={['Hello', 'Css3']} />}></Route>
                 </div>
             </BrowserRouter>
           </BadModel>
