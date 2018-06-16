@@ -7,6 +7,7 @@ import MeteorLoading from './MeteorLoading'
 import RainbowLoading from './RainbowLoading'
 import SloshingAd from './SloshingAd'
 import MilkFonts from './MilkFonts'
+import NewtonPendulum from './NewtonPendulum'
 
 export {
   LiteralSlipping,
@@ -17,5 +18,6 @@ export {
   MeteorLoading,
   RainbowLoading,
   SloshingAd,
-  MilkFonts
+  MilkFonts,
+  NewtonPendulum
 }
